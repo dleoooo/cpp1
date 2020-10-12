@@ -1,7 +1,7 @@
-/* 2053391 ĞÅ09 ñ¼ÔöÁ¼ */
+
 #include <iostream>
 #include <cstdio>
-#include <iomanip>   //¸ñÊ½»¯Êä³ö±ØĞë°üº¬´ËÍ·ÎÄ¼ş
+#include <iomanip>   //æ ¼å¼åŒ–è¾“å‡ºå¿…é¡»åŒ…å«æ­¤å¤´æ–‡ä»¶
 using namespace std;
 
 #ifdef _MSC_VER
@@ -16,129 +16,129 @@ int main()
 
 	for (i=0; i<2; i++, a=-a) {
 		cout << "======================" << endl;
-		cout << "=" << (a>=0 ? "Õı":"¸º") << "¸¡µãÊıµÄ¸ñÊ½»¯Êä³ö=" << endl;
+		cout << "=" << (a>=0 ? "æ­£":"è´Ÿ") << "æµ®ç‚¹æ•°çš„æ ¼å¼åŒ–è¾“å‡º=" << endl;
 		cout << "======================" << endl;
 
-		cout << "C++È±Ê¡Êä³ö" << endl;
+		cout << "C++ç¼ºçœè¾“å‡º" << endl;
 		cout << a << endl;
 		printf("%7.3f\n",a);
 		getchar();
 
-		cout << "9Î»ÓĞĞ§Êı×Ö" << endl;
+		cout << "9ä½æœ‰æ•ˆæ•°å­—" << endl;
 		cout << setprecision(9) << a << endl;
 		printf("%10.6f\n",a);
 		getchar();
 
-		cout << "Ğ¡Êıµãºó6Î»" << endl;
+		cout << "å°æ•°ç‚¹å6ä½" << endl;
 		cout << setiosflags(ios::fixed) << setprecision(6) << a << endl;
 		printf("%.6f\n",a);
 		getchar();
 
-		cout << "Ğ¡Êıµãºó8Î»" << endl;
+		cout << "å°æ•°ç‚¹å8ä½" << endl;
 		cout << setiosflags(ios::fixed) << setprecision(8) << a << endl;
 		printf("%.8f\n",a);
 		getchar();
 
-		cout << "×Ü¿í¶È20£¬Ğ¡Êıµãºó6Î»£¬ÓÒ¶ÔÆë" << endl;
+		cout << "æ€»å®½åº¦20ï¼Œå°æ•°ç‚¹å6ä½ï¼Œå³å¯¹é½" << endl;
 		cout << setw(20) << setiosflags(ios::fixed) << setprecision(6) << a << endl;
 		printf("%20.6f\n",a);
 		getchar();
 
-		cout << "×Ü¿í¶È20£¬Ğ¡Êıµãºó8Î»£¬×ó¶ÔÆë" << endl;
-		cout << setw(20) << setiosflags(ios::fixed) << setprecision(8) << setiosflags(ios::left) << a << '*' << endl; //×ó¶ÔÆë,×îºó¼Ó*ÊÇÎªÁË¿´Çå³ş¼¸¸ö¿Õ¸ñ
+		cout << "æ€»å®½åº¦20ï¼Œå°æ•°ç‚¹å8ä½ï¼Œå·¦å¯¹é½" << endl;
+		cout << setw(20) << setiosflags(ios::fixed) << setprecision(8) << setiosflags(ios::left) << a << '*' << endl; //å·¦å¯¹é½,æœ€ååŠ *æ˜¯ä¸ºäº†çœ‹æ¸…æ¥šå‡ ä¸ªç©ºæ ¼
 		printf("%-20.8f*\n",a);
 		getchar();
 
-		cout << resetiosflags(ios::fixed) << resetiosflags(ios::left) << setprecision(6); //´Ë¾äÓÃÓÚÏû³ıios::fixed¡¢ios::leftµÄÉèÖÃ²¢»Ö¸´6Î»Ğ¡Êı
+		cout << resetiosflags(ios::fixed) << resetiosflags(ios::left) << setprecision(6); //æ­¤å¥ç”¨äºæ¶ˆé™¤ios::fixedã€ios::leftçš„è®¾ç½®å¹¶æ¢å¤6ä½å°æ•°
 
-		cout << "¿ÆÑ§¼ÆÊı·¨-Ğ¡Êıµãºó6Î»" << endl;
+		cout << "ç§‘å­¦è®¡æ•°æ³•-å°æ•°ç‚¹å6ä½" << endl;
 		cout << setiosflags(ios::scientific) << a << endl;
 		printf("%.6e\n",a);
 		getchar();
 
-		cout << "¿ÆÑ§¼ÆÊı·¨-Ğ¡Êıµãºó4Î»" << endl;
+		cout << "ç§‘å­¦è®¡æ•°æ³•-å°æ•°ç‚¹å4ä½" << endl;
 		cout << setiosflags(ios::scientific) << setprecision(4) << a << endl;
 		printf("%.4e\n",a);
 		getchar();
 
-		cout << "¿ÆÑ§¼ÆÊı·¨-×Ü¿í¶È20£¬Ğ¡Êıµãºó6Î»£¬ÓÒ¶ÔÆë" << endl;
+		cout << "ç§‘å­¦è®¡æ•°æ³•-æ€»å®½åº¦20ï¼Œå°æ•°ç‚¹å6ä½ï¼Œå³å¯¹é½" << endl;
 		cout << setw(20) << setiosflags(ios::scientific) << setprecision(6) << a << endl;
 		printf("%20.6e\n",a);
 		getchar();
 
-		cout << "¿ÆÑ§¼ÆÊı·¨-×Ü¿í¶È20£¬Ğ¡Êıµãºó4Î»£¬×ó¶ÔÆë" << endl;
-		cout << setw(20) << setiosflags(ios::scientific) << setprecision(4) << setiosflags(ios::left) << a << '*' << endl; //×ó¶ÔÆë,×îºó¼Ó*ÊÇÎªÁË¿´Çå³ş¼¸¸ö¿Õ¸ñ
+		cout << "ç§‘å­¦è®¡æ•°æ³•-æ€»å®½åº¦20ï¼Œå°æ•°ç‚¹å4ä½ï¼Œå·¦å¯¹é½" << endl;
+		cout << setw(20) << setiosflags(ios::scientific) << setprecision(4) << setiosflags(ios::left) << a << '*' << endl; //å·¦å¯¹é½,æœ€ååŠ *æ˜¯ä¸ºäº†çœ‹æ¸…æ¥šå‡ ä¸ªç©ºæ ¼
 		printf("%-20.4e*\n",a);
 		getchar();
 
-		cout << resetiosflags(ios::scientific) << resetiosflags(ios::left) << setprecision(6); //´Ë¾äÓÃÓÚÏû³ıios::fixed¡¢ios::leftµÄÉèÖÃ²¢»Ö¸´6Î»Ğ¡Êı
+		cout << resetiosflags(ios::scientific) << resetiosflags(ios::left) << setprecision(6); //æ­¤å¥ç”¨äºæ¶ˆé™¤ios::fixedã€ios::leftçš„è®¾ç½®å¹¶æ¢å¤6ä½å°æ•°
 
 		cout << endl << endl;
 		}
 
 	for (i=0; i<2; i++, b=-b) {
 		cout << "======================" << endl;
-		cout << "=" << (b>=0 ? "Õı":"¸º") << "ÕûÊıµÄ¸ñÊ½»¯Êä³ö=" << endl;
+		cout << "=" << (b>=0 ? "æ­£":"è´Ÿ") << "æ•´æ•°çš„æ ¼å¼åŒ–è¾“å‡º=" << endl;
 		cout << "======================" << endl;
 
-		cout << "È±Ê¡Êä³ö" << endl;
+		cout << "ç¼ºçœè¾“å‡º" << endl;
 		cout << b << endl;
 		printf("%d\n",b);
 		getchar();
     
-		cout << "È±Ê¡Êä³ö-×Ü¿í¶È20£¬ÓÒ¶ÔÆë" << endl;
+		cout << "ç¼ºçœè¾“å‡º-æ€»å®½åº¦20ï¼Œå³å¯¹é½" << endl;
 		cout << setw(20) << b << endl;
 		printf("%20d\n",b);
 		getchar();
 
-		cout << "È±Ê¡Êä³ö-×Ü¿í¶È20£¬×ó¶ÔÆë" << endl;
-		cout << setw(20) << setiosflags(ios::left) << b << '*' << endl; //×ó¶ÔÆë,×îºó¼Ó*ÊÇÎªÁË¿´Çå³ş¼¸¸ö¿Õ¸ñ
+		cout << "ç¼ºçœè¾“å‡º-æ€»å®½åº¦20ï¼Œå·¦å¯¹é½" << endl;
+		cout << setw(20) << setiosflags(ios::left) << b << '*' << endl; //å·¦å¯¹é½,æœ€ååŠ *æ˜¯ä¸ºäº†çœ‹æ¸…æ¥šå‡ ä¸ªç©ºæ ¼
 		printf("%-20d*\n",b);
 		getchar();
 
-		cout << resetiosflags(ios::left); //Ïû³ı×ó¶ÔÆëµÄÉèÖÃ
+		cout << resetiosflags(ios::left); //æ¶ˆé™¤å·¦å¯¹é½çš„è®¾ç½®
 
-		cout << "°Ë½øÖÆÊä³ö" << endl;
+		cout << "å…«è¿›åˆ¶è¾“å‡º" << endl;
 		cout << oct << b << endl;
 		printf("%lo\n",b);
 		getchar();
     
-		cout << "°Ë½øÖÆ-×Ü¿í¶È20£¬ÓÒ¶ÔÆë" << endl;
+		cout << "å…«è¿›åˆ¶-æ€»å®½åº¦20ï¼Œå³å¯¹é½" << endl;
 		cout << setw(20) << b << endl;
 		printf("%20lo\n",b);
 		getchar();
 
-		cout << "°Ë½øÖÆ-×Ü¿í¶È20£¬×ó¶ÔÆë" << endl;
-		cout << setw(20) << setiosflags(ios::left) << b << '*' << endl; //×ó¶ÔÆë,×îºó¼Ó*ÊÇÎªÁË¿´Çå³ş¼¸¸ö¿Õ¸ñ
+		cout << "å…«è¿›åˆ¶-æ€»å®½åº¦20ï¼Œå·¦å¯¹é½" << endl;
+		cout << setw(20) << setiosflags(ios::left) << b << '*' << endl; //å·¦å¯¹é½,æœ€ååŠ *æ˜¯ä¸ºäº†çœ‹æ¸…æ¥šå‡ ä¸ªç©ºæ ¼
 		printf("%-20lo*\n",b);
 		getchar();
 
-		cout << resetiosflags(ios::left); //Ïû³ı×ó¶ÔÆëµÄÉèÖÃ
+		cout << resetiosflags(ios::left); //æ¶ˆé™¤å·¦å¯¹é½çš„è®¾ç½®
 
-		cout << "Ê®Áù½øÖÆÊä³ö(a-f)" << endl;
+		cout << "åå…­è¿›åˆ¶è¾“å‡º(a-f)" << endl;
 		cout << hex << b << endl;
 		printf("%lx\n",b);
 		getchar();
     
-		cout << "Ê®Áù½øÖÆ(a-f)-×Ü¿í¶È20£¬ÓÒ¶ÔÆë" << endl;
+		cout << "åå…­è¿›åˆ¶(a-f)-æ€»å®½åº¦20ï¼Œå³å¯¹é½" << endl;
 		cout << setw(20) << b << endl;
 		printf("%20lx\n",b);
 		getchar();
 
-		cout << "Ê®Áù½øÖÆÊä³ö(A-F)" << endl;
+		cout << "åå…­è¿›åˆ¶è¾“å‡º(A-F)" << endl;
 		cout << setiosflags(ios::uppercase) << b << endl;
 		printf("%lX\n",b);
 		getchar();
     
-		cout << "Ê®Áù½øÖÆ-×Ü¿í¶È20£¬×ó¶ÔÆë" << endl;
-		cout << setw(20) << setiosflags(ios::left) << b << '*' << endl; //×ó¶ÔÆë,×îºó¼Ó*ÊÇÎªÁË¿´Çå³ş¼¸¸ö¿Õ¸ñ
+		cout << "åå…­è¿›åˆ¶-æ€»å®½åº¦20ï¼Œå·¦å¯¹é½" << endl;
+		cout << setw(20) << setiosflags(ios::left) << b << '*' << endl; //å·¦å¯¹é½,æœ€ååŠ *æ˜¯ä¸ºäº†çœ‹æ¸…æ¥šå‡ ä¸ªç©ºæ ¼
 		printf("%-20lX*\n",b);
 		getchar();
 
-		cout << resetiosflags(ios::uppercase) << resetiosflags(ios::left); //Ïû³ı´óĞ´¼°×ó¶ÔÆëµÄÓ°Ïì
+		cout << resetiosflags(ios::uppercase) << resetiosflags(ios::left); //æ¶ˆé™¤å¤§å†™åŠå·¦å¯¹é½çš„å½±å“
 
-		cout << dec;     //»Ö¸´10½øÖÆ
-		cout << "È±Ê¡-´ø·ûºÅÎ»" << endl;
+		cout << dec;     //æ¢å¤10è¿›åˆ¶
+		cout << "ç¼ºçœ-å¸¦ç¬¦å·ä½" << endl;
 		cout << setiosflags(ios::showpos) << b << endl;
 		printf("%+d\n",b);
 		getchar();
